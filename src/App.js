@@ -6,15 +6,14 @@ import Login from './components/Login';
 import Register from './components/Register';
 function App() {
   return (
-    
+    <> <Header />
     <Routes>
-      <Route index element ={
+      <Route path='/' index element ={
           <>
-            <Header />
            <Post />
           </>
       } />
-
+      
       <Route path={'/login'} element={
          <Login />
       } />
@@ -23,7 +22,7 @@ function App() {
             <Register />
          } />
 
-    </Routes>
+    </Routes></>
   );
 }
 
